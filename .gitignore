@@ -1,0 +1,45 @@
+# Secrets and credentials
+*.pem
+*.key
+*.crt
+*.p12
+id_rsa*
+id_ed25519*
+id_ecdsa*
+*.pub
+.env
+.env.*
+*.secret
+credentials*
+authorized_keys
+
+# Klipper auto-generated (machine-specific)
+saved_variables.cfg
+*.bak
+*.bak.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+*.egg
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Editor
+.vscode/
+.idea/
+*.sublime-*
+
+# Build artifacts
+*.o
+*.bin
+*.elf
+out/
