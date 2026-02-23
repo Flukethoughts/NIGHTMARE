@@ -1,0 +1,303 @@
+/*
+ * NIGHTMARE — Dark Metal Theme for Mainsail
+ * Electric blue / black steel aesthetic
+ */
+
+:root {
+    --color-primary: #00a8ff !important;
+    --color-primary-darken-1: #0090db !important;
+    --color-primary-darken-2: #0078b8 !important;
+    --color-primary-lighten-1: #33bbff !important;
+    --color-primary-lighten-2: #66cdff !important;
+}
+
+/* ── Global background ── */
+.theme--dark.v-application {
+    background-color: #0a0a0f !important;
+}
+
+/* ── Cards and panels ── */
+.theme--dark .v-card,
+.theme--dark .v-sheet,
+.theme--dark .v-expansion-panel {
+    background-color: #16161f !important;
+    border: 1px solid rgba(0, 168, 255, 0.08) !important;
+}
+
+.theme--dark .v-card:hover {
+    border-color: rgba(0, 168, 255, 0.15) !important;
+}
+
+/* ── Sidebar / Navigation drawer ── */
+.theme--dark .v-navigation-drawer {
+    background-color: #0d0d14 !important;
+}
+
+.theme--dark .v-navigation-drawer .v-list-item--active {
+    background-color: rgba(0, 168, 255, 0.12) !important;
+}
+
+.theme--dark .v-navigation-drawer .v-list-item--active .v-list-item__title,
+.theme--dark .v-navigation-drawer .v-list-item--active .v-icon {
+    color: #00a8ff !important;
+}
+
+.theme--dark .v-navigation-drawer .v-list-item:hover {
+    background-color: rgba(0, 168, 255, 0.06) !important;
+}
+
+/* ── App bar / Toolbar ── */
+.theme--dark .v-app-bar,
+.theme--dark .v-toolbar {
+    background-color: #111118 !important;
+    border-bottom: 1px solid rgba(0, 168, 255, 0.1) !important;
+}
+
+/* ── Text colors ── */
+.theme--dark {
+    color: #e0e8f0 !important;
+}
+
+.theme--dark .v-card__title,
+.theme--dark .v-card__subtitle {
+    color: #e0e8f0 !important;
+}
+
+/* ── Buttons — unify all to electric blue ── */
+.theme--dark .v-btn.primary,
+.theme--dark .v-btn.v-btn--has-bg.primary {
+    background-color: #00a8ff !important;
+    color: #0a0a0f !important;
+}
+
+.theme--dark .v-btn.primary:hover {
+    background-color: #00bfff !important;
+    box-shadow: 0 0 12px rgba(0, 168, 255, 0.4) !important;
+}
+
+.theme--dark .v-btn--outlined {
+    border-color: #00a8ff !important;
+    color: #00a8ff !important;
+}
+
+/* Warning/orange buttons → blue */
+.theme--dark .v-btn.warning,
+.theme--dark .v-btn.v-btn--has-bg.warning {
+    background-color: #00a8ff !important;
+    border-color: #00a8ff !important;
+    color: #0a0a0f !important;
+}
+
+/* Error/red buttons → blue */
+.theme--dark .v-btn.error,
+.theme--dark .v-btn.v-btn--has-bg.error {
+    background-color: #0078b8 !important;
+    border-color: #0078b8 !important;
+    color: #e0e8f0 !important;
+}
+
+/* Secondary/grey buttons → dark steel with blue tint */
+.theme--dark .v-btn.secondary,
+.theme--dark .v-btn.v-btn--has-bg.secondary {
+    background-color: #1a2a3a !important;
+    border-color: rgba(0, 168, 255, 0.15) !important;
+    color: #e0e8f0 !important;
+}
+
+/* Active/selected state for toggle buttons (step sizes etc) */
+.theme--dark .v-btn.v-btn--active,
+.theme--dark .v-btn-toggle .v-btn.v-btn--active {
+    background-color: #00a8ff !important;
+    color: #0a0a0f !important;
+}
+
+/* Success/green → blue (buttons, text, badges, icons) */
+.theme--dark .v-btn.success,
+.theme--dark .v-btn.v-btn--has-bg.success {
+    background-color: #00a8ff !important;
+    border-color: #00a8ff !important;
+    color: #0a0a0f !important;
+}
+.theme--dark .success--text,
+.theme--dark .v-btn.success--text {
+    color: #00a8ff !important;
+    caret-color: #00a8ff !important;
+}
+.theme--dark .v-badge .v-badge__badge.success {
+    background-color: #00a8ff !important;
+}
+
+/* Info buttons → blue */
+.theme--dark .v-btn.info,
+.theme--dark .v-btn.v-btn--has-bg.info {
+    background-color: #00a8ff !important;
+    border-color: #00a8ff !important;
+    color: #0a0a0f !important;
+}
+
+/* All colored button hover glow */
+.theme--dark .v-btn.warning:hover,
+.theme--dark .v-btn.error:hover,
+.theme--dark .v-btn.secondary:hover,
+.theme--dark .v-btn.success:hover,
+.theme--dark .v-btn.info:hover {
+    box-shadow: 0 0 12px rgba(0, 168, 255, 0.4) !important;
+}
+
+/* ── Links ── */
+a {
+    color: #00a8ff !important;
+}
+a:hover {
+    color: #00d4ff !important;
+    text-shadow: 0 0 6px rgba(0, 168, 255, 0.3);
+}
+
+/* ── Tabs ── */
+.theme--dark .v-tab--active {
+    color: #00a8ff !important;
+}
+
+.theme--dark .v-tabs-slider {
+    background-color: #00a8ff !important;
+}
+
+/* ── Inputs / Text fields ── */
+.theme--dark .v-text-field > .v-input__control > .v-input__slot {
+    background-color: #111118 !important;
+}
+
+.theme--dark .v-input--is-focused .v-input__slot {
+    border-color: #00a8ff !important;
+}
+
+.theme--dark .v-text-field--outlined fieldset {
+    border-color: rgba(0, 168, 255, 0.2) !important;
+}
+
+.theme--dark .v-text-field--outlined.v-input--is-focused fieldset {
+    border-color: #00a8ff !important;
+}
+
+/* ── Sliders ── */
+.theme--dark .v-slider__track-fill {
+    background-color: #00a8ff !important;
+}
+
+.theme--dark .v-slider__thumb {
+    background-color: #00a8ff !important;
+}
+
+/* ── Tables ── */
+.theme--dark .v-data-table {
+    background-color: #16161f !important;
+}
+
+.theme--dark .v-data-table thead th {
+    background-color: #111118 !important;
+    color: #00a8ff !important;
+    border-bottom: 1px solid rgba(0, 168, 255, 0.15) !important;
+}
+
+.theme--dark .v-data-table tbody tr:hover {
+    background-color: rgba(0, 168, 255, 0.05) !important;
+}
+
+/* ── Dialogs ── */
+.theme--dark .v-dialog .v-card {
+    background-color: #16161f !important;
+    border: 1px solid rgba(0, 168, 255, 0.12) !important;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1a2a3a;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00a8ff;
+}
+
+/* ── Temperature panel — keep functional colors ── */
+.theme--dark .temp-chart .apexcharts-tooltip {
+    background-color: #16161f !important;
+    border: 1px solid rgba(0, 168, 255, 0.2) !important;
+}
+
+/* ── Console ── */
+.theme--dark .console {
+    background-color: #0a0a0f !important;
+}
+
+.theme--dark .console .command-line {
+    border-color: rgba(0, 168, 255, 0.15) !important;
+}
+
+/* ── Progress bars ── */
+.theme--dark .v-progress-linear__determinate {
+    background-color: #00a8ff !important;
+}
+
+/* ── Chips ── */
+.theme--dark .v-chip {
+    background-color: rgba(0, 168, 255, 0.1) !important;
+    border: 1px solid rgba(0, 168, 255, 0.2) !important;
+    color: #00a8ff !important;
+}
+
+/* ── Tooltips ── */
+.v-tooltip__content {
+    background-color: #16161f !important;
+    border: 1px solid rgba(0, 168, 255, 0.15) !important;
+    color: #e0e8f0 !important;
+}
+
+/* ── Dividers ── */
+.theme--dark .v-divider {
+    border-color: rgba(0, 168, 255, 0.08) !important;
+}
+
+/* ── Selection / Checkbox ── */
+.theme--dark .v-input--selection-controls__input .v-icon {
+    color: #00a8ff !important;
+}
+
+/* ── Webcam panel (iframe) ── */
+.theme--dark .webcam-container iframe {
+    border: 1px solid rgba(0, 168, 255, 0.1) !important;
+    border-radius: 4px;
+}
+
+/* ── Bottom sidebar Klipper logo → Kalico cat ── */
+img.klipper-logo {
+    content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAOZVhJZk1NACoAAAAIAAAAAAAAANJTkwAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+oCFxUDJi/IGacAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjYtMDItMjNUMjA6MDM6NTYrMDA6MDDWRFpGAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI2LTAyLTIzVDIwOjAzOjU2KzAwOjAwpxni+gAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyNi0wMi0yM1QyMTowMzozOCswMDowMLvKaHoAAA2RSURBVGjezZp7cNzVdcc/9/4e+1vtrrSy3rZkSbZkS7JsYRdbBsfGDgnYhEchgSZTmg6BP5pJaZPOMEPbSUpppk0nKaUw6TBtmsEB+kegDGBw7MQ2MQ5gEvxCBluyZVvv92ul3f3t/h63f+z6rZcLNJyZO7O7d3/nfr/3nHvvOef+BJ8BqSxbOGt/R1/vjH36ZwW8UgqlVKGAuxFCAK8Ag5mPM8vvlcCl4H3PqzID1r8VlZbeqZRiqL+vKZmI/0XACnqzEpjOfLOZ7FMB7/uNgWDw38srqzaWlpeTStnExsc22clkPjA8mx4J0DXsmR39rq7UReVz+eUnCH5DMCf0fFVNzcbS8vLMrGo6hmkuEELkz6VLKsVdjYuNl+orje2JtNrcNeJJX10+0KcBXgiB8v0vhSO5P6taVtu0oLjkIihNwzDMXCFE8Vz6tPrF0b3/8LXc629pCqyM2+rOKVuVxxLqTNgSI54P0UiEaCTCxNTkxwYejUQASCbiQmra/bn5+T9eVFlVUapZhG2HKeWhGQZCCCZjE9pkLLZbSvnRbONrKyqjj39rW8i8rsZgy4pAsChXWzc25W/rHfONSds/beoiIcTHI3LBkkrhuq5uBgIP5xcU/rBscUVBgxHmkdrruWNhDUf7u5gwJJqmkYhPydjY2EEhxEFgxnH1sSm/ayjm1xXnSxZEJA9+IYctjYGlL7yV+OGO9+17zg15/2qn1evRkLSluAimo6/3mlwsu9Pk6Lr+6ILi4keKy8qsPzByebhuLaXhPICW5uTS4U1h6DqmGUBKWaHpOq7jzOxCkVDktptWmLXVZdkdVUB+RLKxPiCaqowKx+WOkUm/YTyuuvuH0z15YZ3zFplGBKCR3RyuIJCv6/oPisrKvlNSUmpuChbwl/XrKQxFQCkQkjPjIxxPxzAME9dxGB0e6hkfHXk5ELDUeQ+4sumJlDrVO+aDDye7POw01C4ShIKS5uUmqyqN4C+Ppu57bn9i89FzYnva5RkBXUAxUA0sBRYDJUAeEMgSsYEJYADokVJuLSguubesuITbImU8sGw1AcPMgM9KkZUDkz4AhmGg63qZYZgWEM/+xQDKgBqgAhjVbUed6hvzvPfb0LpbrqfAzOO1k8dpqB+gsVIStAR33RikudYs/tGrU4+8/F7ydl/RDizPKgtlAc8psYlxTDuNVl9E19QE1XkL0KQOKgO60AqheVkCpoluGMW6oZcDEWBTtq3MjhsEhjTDDBcuLdXuztfzzBvDW2goqqBCW0LbuSAtfeNYwRQnOh3+a1+C35xMM2mrImAZUACY8wUP4LkuMTvBgZ4z7Dp7ktbRAcKGSVk4F03X8TyPfUOdpDVJfDLG2PBIjud5nxdCfAv4Q6AOyM9awgae0B2XrsEJPyZ0JxxP2aDCRIMWt1SsYdcZi4ef2cm5sSkmEgopQMwb7vRyPrYZiMd4sfUou8+d5ItVdXy+oobeeIyOzg7GUjYpO4nveUEhRNM0auLA9zMEPDU0MqmGlEwvnHCmQBThuA4vtR7lx0d/Q2dsMrMy5TWgnCcRTQimnDQvtx3j1VMt+KgLa2KWIK4X+C6wHfD0dFpNjMX9Xle5TVPeJGnH4clDv+YnLQexXQf5cad8LiJZsAqV8cXZx3sXeBR46/wP8qlvRO1YQnUm0x5j3ihPHX6LZ469Tcr79MFfg8SBp4B7LwXf0deL/sTOKTyPs1M2tAwc59Vj43jKR8x/bf5/yCjwPNBzKXjIBHO4fjq3QYfrH+keJemmP2vgIbPnPw3UXtmhRSMRpBR53cPeV0cmfXOuDOj3KOVAJbAbsM/HZRkCYDg+X1WZk/QzI9NM5XIgBeyHTDijx5NJfJSTJ6QT+Iy5ji3AN80rt9RvArvI7Ejo4xPjuEqF7ykqC6/JiaBQl2tRXPnLvGZN8fEOPYngvcRkerfrdpuGsZiL+XsR8CfAQUDpuq6jlPL7XdfvxibtQspRSJk5vMKWRJOQDVFmZyMUni8RRhAhJOl0CtedNSefWZRi2HWGp9LJrxeY0Vql1DeAtYBFJoA0gZRetKAAX5E+hu9uvVVjUYHGi+8k+d1ph0RKsbrc4NbrAjQuNoiGBEKA718WRF4iPscnaqi++a+JhMPs2vUL9ux9E90wrgm7EILhwQF6O+N2Xjh81vf9t4UQrwCfA64H3iGzFtCllAgFhqZRuyjILWsttq4Jc+SswxuHUhw4keI/9zpUF/tsbAiwoc6kbpFONCIzkb+6aBU35eKoG2jetBGAVDrFkQ9akNq1VW+EEKSSSYwM8fNBzDjwerZdkAuaFQrfB3yFZQpuqDe5YblJ90gOB9vS7GtJ89K7SX66L05pVKOpymBtjUFjhU5FoUY0JBlJGISXrb+gvLKykkgozGQiwbVuz0rNvfI6+npnKWz5gIDyYo2vFAe5uzlIz6jHsXMO77amOXLWYc8HKQRQGpXULdLIi+bRZIwQLGinoLCQBQsWUFtbw/tHjqLr+ryBzQR2OpnVtrG4YizuU5QrybEEi0t1Fpfq3LHWYiKu6Bhy+bDT5dg5hw+7XDpOJnj53ccIBEwKi4qorKrCTtkM9PSQEw5jmCaGYaBpGlJKhJTTWkaI+cftMxOQsPOwzVM745RFJXXlOqsW69SVG1QUaOSHJauWGKxaYvA136Kl22Ko+lH0YJS21lZOnzpF68mTHDtyFN/zEZpEkxJN19ENA8MwMUwD3ciQ0jMpJFq2pW372gmoK77cvCpA2BK0dLp82OXwVptBKp1iQTBNdbHGXesstq4O4LoesdAabty8Dcuy2XTTTQC0tbbyx/f9EYODg+D7uL6P6zjYyeS0s36hSXne1RRzHEOXElCXHWIKivIktzdb3L4OeoZc3k7fS7RqPY9993v89lQnzcsMEIqO8RzyVt2LZZmXKc/NyyMnFEIpddFVxMyholIKhGBheQUpO8lQf78/XwLqahNkv3sZd5pIKJ59cSdL6/tpum410dgEf7rZIp506bVuZu3KDVcpz8vLY+GihZxpb5+XOwAYukFRaSkTo6MM9fdL5si5M3uswPZ8khPJGcgqqCjUKQ/28ctdOyE1wpaVAZTvcWyigZqb/wwrcPVhFQwGWdfcPG/wSilywmHMQADHSaOUSpA9sGYlIGDC8eg63edmts9pCERyBP90f5SnHwjyUFMLm5Z5/G6ompKNf0vZoooZB7hl6zZKS0vxfZ+5REpJQXExQgiS8QSguoDYbM9o2Qqb6/tqOUJs/NIai4A5vdVyLMHScp2oJTgcW0nJpr9jad3KC/2n207xq127aTl2jLbWVgqLiqiurmZqcpL3Dh6c9TBTSpFfUMCiqipcx6GnsxPXcZ4XQuyDmWuj5wkghEhPJNSXGxcbVs1C/er1IMBzPc4MWbQZd1J7y6NUVC297C8vbH+OtsdfYMn+AXbu2U3+mhpqamtpaGykr7ePkydOXL6gLwEfyc2lunYZgWCQ4YEBhgcHRgU8TjaNnJOAlAzYaRpHp/zGL64MYAXEReCeR/eYwYep69FXfYdVm+8nL+/q3CeUG+bEm+/xucl82tfk8uVvPkAoJwfLsrhhw43ouk5XZwfxqTie5yGEQNd18gsLqV62nJxQiJRt09F+mnQq9T9CiGfIOvVMBARcemPCWil55c+3hRb+1R1hfN+jazxAj1hDpO4eljRuIBwOXaXEcRykzJTF/+PJp/nVM//NQ098j1tv24brOCgytU6lFKdPneLwocMMDvSTlxfFCgbZf+AAA4NDCCnpbG9noLenm0wl7hDMfuWlwcVKs6foVYrkR93uF3Rd052CDYgV36Zu80NULKnDNM1plezbu5eOjg6WLFlCaUU5H/Sd4YEHH8Q0TXa8toORkREqKysRQlBQUEDjykaa16+nafV1rGhspHndWoKWxTsHDtB17qwN/A2w47z+2e4k5KUMdQmGxk8mE/4//8uOhHNofAV1azYTDgWZTcrKynjjtR389uBBTp44wfDgIIfef58D+/fz6337KM/efc0k4UiEgd5eujvOOb7n/RD46fm+uS4ctUtZRiMRFPhSyncdx0kfOXSoeaC/z6yrryc3N3dGJcUlJeTm5rJvz14G+gdobl7P8ZYP6Orq4p57v0J9Q8OMz7afPs33H/t7ntu+fcq27X/UNO0HQHo+4OGKU+7SGxdN06TjOPcBj9U3NCx/4MEH2XrbNqL5M18cTrfDzCRDg4PsePVVfvbss7Sfbm+TUj6madrPfd+/kINeM4EriWQBLXNd99uBQOC+latWFdx+553ctGUzlVVVM66JmcS2bc60t7Nvzx7e2PE6J0+cGHUc5+e6rj8JtF4L8FkJXGkNKaXmed4613W/ruv61pLSksqGFY1i9Zo1NKxooLy8gmh+lGAwiKbpgMJ1PZLJBKOjo3R1dvLR8Q85fPgwJz76SA0PDXX6vv8LTdOek1K+p5S6plmfF4ErSQAIIYTv+0s8z9ukfH+L1LQmy7LKQ+FwJBKJGKFQ6HweSzqdJh6PMxmLOVPx+GTatrt9pY5JKd/UNO0tIcQZdUV69n95Q2BeDjvDbaQEFvi+X66UqvB9vwyl8lWm3IEQIg2MSSn7pJRdQohuMkXaq4Kij/NqwzWXnj6p2/tP6n2M/wWXErwyEkoz1QAAAABJRU5ErkJggg==") !important;
+    transform: none !important;
+    height: 48px !important;
+    width: 48px !important;
+}
+
+/* ── Metal accent: subtle top border glow on cards ── */
+.theme--dark .v-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(0, 168, 255, 0.15) 50%,
+        transparent 100%
+    );
+    pointer-events: none;
+}

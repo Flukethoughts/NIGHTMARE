@@ -134,3 +134,7 @@ Klipper/Kalico configs and the custom kinematics module are distributed under th
 - [Julian Schill](https://github.com/julianschill/klipper-led_effect) — LED effect plugin
 - [Chube](https://chubehotend.com/) — Chube Air hotend
 - Original `hybrid_corexy` kinematics by Fabrice Gallet, Helge Keck, Mikkel Schmidt
+
+## Built With
+
+- [Claude](https://claude.ai/) by [Anthropic](https://www.anthropic.com/) — AI partner for configuration development, documentation, debugging, and theme design
