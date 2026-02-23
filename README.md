@@ -25,7 +25,7 @@ RatRig V-Core 4 Hybrid 500mm with custom standalone Klipper/Kalico configuration
 
 - **Kalico** (Klipper fork by KalicoCrew) — firmware on all MCUs
 - **Moonraker** — API server
-- **Mainsail** — Web interface
+- **Fluidd** — Web interface
 - **KlipperScreen** — Touch display
 - **klipper-led_effect** — LED animation engine
 
@@ -34,7 +34,7 @@ RatRig V-Core 4 Hybrid 500mm with custom standalone Klipper/Kalico configuration
 - Custom `hybrid_corexy_4wd` kinematics module (inverted belt routing + AWD)
 - 56V high-voltage XY system with TMC5160T Pro drivers
 - Adaptive bed mesh based on slicer print area
-- Inline belt tension and input shaper graphs in Mainsail console
+- Inline belt tension and input shaper graphs in console
 - Camera overlay with hardware-encoded HLS streaming (h264_rkmpp)
 - Status LED animations integrated into print workflow
 - Comprehensive calibration macro suite
@@ -50,7 +50,6 @@ config/           # Sanitized Klipper configuration files
   scripts/        # Belt tension and shaper graph generators
 klipper_extras/   # Custom kinematics module + installer
 camera-overlay/   # Camera overlay system documentation
-theme/            # Mainsail branding (NIGHTMARE logo)
 docs/             # Hardware mods, firmware, setup, calibration, wiring
 ```
 
@@ -114,6 +113,7 @@ All serial numbers, IP addresses, and credentials have been removed. See [SECURI
 ## Dependencies
 
 - [Kalico](https://github.com/KalicoCrew/kalico) (Klipper fork)
+- [Fluidd](https://github.com/fluidd-core/fluidd) — Web interface (replaced Mainsail — Vue 3, better theming, actively maintained)
 - [klipper-led_effect](https://github.com/julianschill/klipper-led_effect) for LED animations
 - [Beacon](https://github.com/beacon3d/beacon_klipper) for probe support
 - [gcode_shell_command](https://github.com/dw-0/kiauh-gcodes) for inline graph generation
@@ -137,4 +137,4 @@ Klipper/Kalico configs and the custom kinematics module are distributed under th
 
 ## Built With
 
-- [Claude](https://claude.ai/) by [Anthropic](https://www.anthropic.com/) — AI partner for configuration development, documentation, debugging, and theme design
+- [Claude](https://claude.ai/) by [Anthropic](https://www.anthropic.com/) — AI partner for configuration development, documentation, and debugging
