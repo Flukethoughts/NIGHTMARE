@@ -9,6 +9,54 @@
     --color-primary-darken-2: #0078b8 !important;
     --color-primary-lighten-1: #33bbff !important;
     --color-primary-lighten-2: #66cdff !important;
+
+    /* Override Vuetify theme colors at root */
+    --v-primary-base: #00a8ff !important;
+    --v-success-base: #00a8ff !important;
+    --v-success-lighten1: #33bbff !important;
+    --v-success-darken1: #0090db !important;
+    --v-warning-base: #00a8ff !important;
+    --v-error-base: #0078b8 !important;
+    --v-info-base: #00a8ff !important;
+}
+
+/* ── Nuclear override: all green/success text → blue ── */
+.success--text,
+.success--text .v-icon,
+.success--text .v-btn__content,
+.v-application .success--text {
+    color: #00a8ff !important;
+    caret-color: #00a8ff !important;
+}
+
+/* ── Sidebar active indicator bar ── */
+.v-navigation-drawer .v-list-item--active::before,
+.v-navigation-drawer .v-list-item--active .v-list-item__overlay {
+    background-color: #00a8ff !important;
+}
+.v-navigation-drawer .v-list-item--active {
+    border-color: #00a8ff !important;
+}
+/* Active bar/stripe on sidebar items */
+.v-application .primary {
+    background-color: #00a8ff !important;
+    border-color: #00a8ff !important;
+}
+.v-application .primary--text {
+    color: #00a8ff !important;
+    caret-color: #00a8ff !important;
+}
+.v-application .success {
+    background-color: #00a8ff !important;
+    border-color: #00a8ff !important;
+}
+.v-application .warning {
+    background-color: #00a8ff !important;
+    border-color: #00a8ff !important;
+}
+.v-application .warning--text {
+    color: #00a8ff !important;
+    caret-color: #00a8ff !important;
 }
 
 /* ── Global background ── */
