@@ -40,8 +40,9 @@
 | Heated bed thermistor | PF3 | |
 | Neopixel data | PB10 | Via SN74AHCT125N level shifter |
 | Chamber light | PB0 | HE2 output (HE3/PB11 dead) |
-| Enclosure intake fan | PD12 | FAN2, always-on |
+| Enclosure intake fan | PD12 | FAN2, always-on, 24V on HV stepper driver |
 | Controller fan | PD13 | FAN3, auto with steppers |
+| Enclosure exhaust fan | PE5 | FAN5, always-on, 24V on HV stepper driver |
 | SPI MOSI | PA7 | For TMC5160 |
 | SPI MISO | PA6 | For TMC5160 |
 | SPI SCLK | PA5 | For TMC5160 |

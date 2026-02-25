@@ -73,8 +73,9 @@ Documentation of all hardware modifications made to the NIGHTMARE RatRig V-Core 
 
 ## Controller Fan Configuration
 
-- **FAN2 (PD12):** Enclosure intake fan, always-on via output_pin
+- **FAN2 (PD12):** Enclosure intake fan, always-on via output_pin (24V on HV stepper driver rail)
 - **FAN3 (PD13):** Controller/electronics fan, auto-activates with stepper activity, 60s idle timeout, 0.4 idle speed
+- **FAN5 (PE5):** Enclosure exhaust fan, always-on via output_pin (24V on HV stepper driver rail)
 
 ## Dir Pin Inversions
 
