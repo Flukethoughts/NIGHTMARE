@@ -62,6 +62,8 @@ All thermistors are 100K NTC (Generic 3950). Use th4-th7 NTC inputs, NOT th0-th3
 
 The WS2812B LEDs require 5V data signal but the Octopus Pro outputs 3.3V. A unidirectional SN74AHCT125N level shifter converts the signal. Do NOT use bi-directional shifters (BSS138, TXB0104, TXS0108E) — they are too slow for the 800kHz neopixel protocol.
 
+![Level Shifter Wiring](../images/level-shifter-wiring.jpg)
+
 | SN74AHCT125N Pin | Connection | Notes |
 |------------------|------------|-------|
 | Pin 1 (1OE) | GND | Enable gate 1 (active low) |
