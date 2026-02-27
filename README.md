@@ -7,7 +7,7 @@ RatRig V-Core 4 Hybrid 500mm with custom standalone Klipper/Kalico configuration
 | Component | Model | Details |
 |-----------|-------|---------|
 | Frame | RatRig V-Core 4 Hybrid 500mm | 500x500x500mm build volume |
-| Host | Orange Pi 5 Pro 16GB | Debian Bookworm, ARM64, 128GB NVMe |
+| Host | [Orange Pi 5 Pro](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5-Pro.html) 16GB | Debian Bookworm, ARM64, 128GB NVMe |
 | Mainboard | BTT Octopus Pro H723 V1.1 | STM32H723 MCU |
 | Toolboard | BTT EBB42 v1.2 | STM32G0B1 MCU, CAN-over-USB |
 | XY Motors (x4) | LDO-42STH60-3004AH "Kraken V2" | 3.0A rated, 56V HV, TMC5160T Pro |
@@ -148,9 +148,9 @@ Klipper/Kalico configs and the custom kinematics module are distributed under th
 - [KalicoCrew](https://github.com/KalicoCrew/kalico) — Kalico firmware
 - [BigTreeTech](https://github.com/bigtreetech) — Octopus Pro, EBB42
 - [LDO Motors](https://www.ldomotors.com/) — Kraken V2, Z motors, Orbiter 2
-- [PD3D (PeeDee3D)](https://peedee3d.com/) — Kraken V2 motors, Gates pulleys
+- [PD3D (PeeDee3D)](https://peedee3d.com/) — Kraken V2 motors, Gates pulleys, Therm^2 board
 - [West3D](https://west3d.com/) — Gates GT2 EPDM belts
-- [KB-3D](https://kb-3d.com/store/) — 3DO USB Camera V2
+- [KB-3D](https://kb-3d.com/store/) — 3DO USB Camera V2, Gates smooth idlers
 - [Mandala Rose Works](https://mandalaroseworks.com/) — CNC toolhead, XY joiners, bed support arms, motor mounts
 - [Luke's Lab](https://www.lukeslabonline.com/) — Toro titanium gantry tube
 - [BRS Engineering](https://store.brs-engineering.com/) — BRS-AWD DRIVE (planned)
