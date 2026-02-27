@@ -81,7 +81,7 @@ All 6061-T6 aluminum unless noted.
 | Item | Qty | Price | Total | Source |
 |------|-----|-------|-------|--------|
 | Gates 2GT 25T Motor Pulleys (5mm bore, 9mm) | 4 | $4.99 | $20 | [PD3D](https://peedee3d.com/) |
-| Gates 2GT Toothed Idlers (20T, 5mm bore, 9mm) | 6 | $4.49 | $27 | — |
+| Gates 2GT Toothed Idlers (20T, 5mm bore, 9mm) | 6 | $4.49 | $26.94 | [West3D](https://west3d.com/) |
 | Gates 2GT Smooth Idlers (5mm bore, 9mm) | 12 | $4.99 | $60 | [KB-3D](https://kb-3d.com/store/) |
 | Gates LL-2GT-E EPDM Belt (9mm, 3000mm) | 1 | $36 | $36 | [West3D](https://west3d.com/) |
 | BRS-AWD DRIVE v2.2 CNC (pending release) | 1 | ~$149 | ~$149 | [BRS Engineering](https://store.brs-engineering.com/) |
