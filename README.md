@@ -162,6 +162,22 @@ Klipper/Kalico configs and the custom kinematics module are distributed under th
 - [Chube](https://chubehotend.com/) — Chube Air hotend
 - Original `hybrid_corexy` kinematics by Fabrice Gallet, Helge Keck, Mikkel Schmidt
 
+## Inspiration & Community
+
+YouTube channels that helped shape this build:
+
+- [Vez3D](https://www.youtube.com/@Vez3D)
+- [Mandic Labs](https://www.youtube.com/@MandicLabs)
+- [Canuck Creator](https://www.youtube.com/@CanuckCreator)
+- [xscorpion2](https://www.youtube.com/@xscorpion2)
+- [Mandala Rose Works](https://www.youtube.com/@mandalaroseworks)
+- [Luke's Laboratory](https://www.youtube.com/@LukesLaboratory)
+- [PeeDee3D](https://www.youtube.com/@PeeDee3D)
+
+## Therapy
+
+- [Lake Martin Machine Gun](https://lakemartinmachinegun.com/) — for stress relief between debugging sessions
+
 ## Built With
 
 - [Claude](https://claude.ai/) by [Anthropic](https://www.anthropic.com/) — AI partner for configuration development, documentation, and debugging
