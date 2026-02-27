@@ -1,6 +1,6 @@
 # Changelog
 
-Chronological log of modifications to the NIGHTMARE printer.
+Chronological log of modifications to the NIGHTMARE printer. Project started September 29, 2024 with the RatRig V-Core 4 Hybrid 500mm kit purchase.
 
 ## February 2026
 

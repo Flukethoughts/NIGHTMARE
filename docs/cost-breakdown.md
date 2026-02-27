@@ -1,8 +1,8 @@
 # Cost Breakdown
 
-Total build cost for the NIGHTMARE RatRig V-Core 4 Hybrid 500mm printer. Prices in USD at time of purchase.
+Total build cost for the NIGHTMARE RatRig V-Core 4 Hybrid 500mm printer. Project started September 29, 2024. Prices in USD at time of purchase.
 
-## RatRig Kit (as purchased from RatRig US)
+## RatRig Kit (purchased Sep 29, 2024 from RatRig US)
 
 | Item | Qty | Unit Price | Total |
 |------|-----|-----------|-------|
