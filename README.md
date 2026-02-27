@@ -2,7 +2,7 @@
 
 RatRig V-Core 4 Hybrid 500mm with custom standalone Klipper/Kalico configuration. Built from scratch after removing RatOS. Features custom hybrid CoreXY 4WD kinematics, 56V high-voltage XY system, and extensive calibration tooling.
 
-**Project started:** September 29, 2024 | **Current build cost:** ~$3,961 ([full breakdown](docs/cost-breakdown.md))
+**Project started:** September 29, 2024 | **Current build cost:** ~$3,961 | **Build time:** ~44 hours manual labor ([full breakdown](docs/cost-breakdown.md))
 
 ## Hardware
 

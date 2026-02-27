@@ -99,4 +99,11 @@ All 6061-T6 aluminum unless noted.
 | Planned Upgrades (on order) | ~$292 |
 | **Projected Total** | **~$4,253** |
 
+## Time Investment
+
+| Category | Hours |
+|----------|-------|
+| Physical build, wiring, and hardware troubleshooting | ~44 |
+| Software configuration, calibration, and documentation | ongoing |
+
 *Prices marked with ~ are approximate. Some items were purchased at different times and prices may have changed.*
