@@ -60,7 +60,7 @@ All 6061-T6 aluminum unless noted.
 | CNC Bed Support Arms (V-Core 4) | 1 set | $144 | $144 | [Mandala Rose Works](https://mandalaroseworks.com/) |
 | CNC Motor Mounts | 1 set | $105 | $105 | [Mandala Rose Works](https://mandalaroseworks.com/) |
 | Mini Oldham Wobblers | 3 | $51 | $51 | [Mandala Rose Works](https://mandalaroseworks.com/) |
-| Titanium Tube 725mm — Clinch Nut Variant (titanium) | 1 | €165 (~$180) | ~$180 | [MIGL Fabrication](https://migl-fabrication.de/) |
+| Titanium Tube 725mm — Clinch Nut Variant (titanium) | 1 | €165 (~$180) | ~$180 | [MIGL Fabrication](https://migl-fabrication.de/en/) |
 | **Aftermarket CNC Total** | | | **~$734** | |
 
 ## Additional Parts (not in kit)

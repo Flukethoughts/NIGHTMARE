@@ -52,7 +52,7 @@ Most stock printed parts have been replaced with machined aluminum and titanium 
 | CNC Bed Support Arms | [Mandala Rose Works](https://mandalaroseworks.com/products/ratrig-bed-support-arms-for-4-0) |
 | CNC Motor Mounts | [Mandala Rose Works](https://mandalaroseworks.com/products/ratrig-vcore4-machined-motor-mounts) |
 | Mini Oldham Wobblers (x3) | [Mandala Rose Works](https://mandalaroseworks.com/products/mini-oldham-leadscrew-wobblers) |
-| Titanium Gantry Tube 725mm (Clinch Nut) | [MIGL Fabrication](https://migl-fabrication.de/) |
+| Titanium Gantry Tube 725mm (Clinch Nut) | [MIGL Fabrication](https://migl-fabrication.de/en/) |
 
 Power: Mean Well UHP-350-55 (55V HV) + UHP-350-24 (24V) + 5V buck converter for host and LEDs.
 
@@ -156,7 +156,7 @@ Klipper/Kalico configs and the custom kinematics module are distributed under th
 - [Fabreeko](https://www.fabreeko.com/) — TMC5160T Pro drivers
 - [KB-3D](https://kb-3d.com/store/) — 3DO USB Camera V2, Gates smooth idlers
 - [Mandala Rose Works](https://mandalaroseworks.com/) — CNC toolhead, XY joiners, bed support arms, motor mounts
-- [MIGL Fabrication](https://migl-fabrication.de/) — Titanium gantry tube (clinch nut variant)
+- [MIGL Fabrication](https://migl-fabrication.de/en/) — Titanium gantry tube (clinch nut variant)
 - [BRS Engineering](https://store.brs-engineering.com/) — BRS-AWD DRIVE (planned)
 - [Beacon](https://beacon3d.com/) — Beacon RevH probe
 - [Julian Schill](https://github.com/julianschill/klipper-led_effect) — LED effect plugin
