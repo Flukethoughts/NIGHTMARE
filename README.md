@@ -134,7 +134,7 @@ All serial numbers, IP addresses, and credentials have been removed. See [SECURI
 - [Fluidd](https://github.com/fluidd-core/fluidd) — Web interface (replaced Mainsail — Vue 3, better theming, actively maintained)
 - [klipper-led_effect](https://github.com/julianschill/klipper-led_effect) for LED animations
 - [Beacon](https://github.com/beacon3d/beacon_klipper) for probe support
-- [gcode_shell_command](https://github.com/dw-0/kiauh-gcodes) for inline graph generation
+- [gcode_shell_command](https://github.com/dw-0/kiauh/blob/master/docs/gcode_shell_command.md) for inline graph generation
 
 ## License
 
