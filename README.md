@@ -148,7 +148,8 @@ Klipper/Kalico configs and the custom kinematics module are distributed under th
 - [KalicoCrew](https://github.com/KalicoCrew/kalico) — Kalico firmware
 - [BigTreeTech](https://github.com/bigtreetech) — Octopus Pro, EBB42
 - [LDO Motors](https://www.ldomotors.com/) — Kraken V2, Z motors, Orbiter 2
-- [PD3D (PeeDee3D)](https://peedee3d.com/) — Kraken V2 motors, Gates pulleys and belts
+- [PD3D (PeeDee3D)](https://peedee3d.com/) — Kraken V2 motors, Gates pulleys
+- [West3D](https://west3d.com/) — Gates GT2 EPDM belts
 - [Mandala Rose Works](https://mandalaroseworks.com/) — CNC toolhead, XY joiners, bed support arms, motor mounts
 - [Luke's Lab](https://www.lukeslabonline.com/) — Toro titanium gantry tube
 - [BRS Engineering](https://store.brs-engineering.com/) — BRS-AWD DRIVE (planned)
