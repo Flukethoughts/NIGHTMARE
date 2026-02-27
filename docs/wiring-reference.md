@@ -1,5 +1,8 @@
 # Wiring Reference
 
+![Electronics Enclosure](../images/electronics-enclosure.jpg)
+*Electronics enclosure — dual Mean Well PSUs (UHP-350-55 + UHP-350-24), Octopus Pro H723 with TMC5160T Pro drivers, early wiring before stepper connections.*
+
 ## Octopus Pro H723 — Motor Slot Assignments
 
 | Motor Slot | Stepper | Motor Model | Notes |
