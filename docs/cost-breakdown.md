@@ -39,12 +39,12 @@ These replaced parts that came with the RatRig kit.
 |------|-----|-------|-------|--------|----------|
 | BTT Octopus Pro H723 V1.1 | 1 | ~$79 | ~$79 | 3DJake | Octopus V1.1 from kit |
 | LDO Kraken V2 (LDO-42STH60-3004AH) | 4 | $44.99 | $180.00 | [PD3D](https://peedee3d.com/) | 2x stock HT motors + 2x Hybrid kit motors |
-| TMC5160T Pro Drivers | 4 | ~$15 | ~$60 | — | 4x TMC2209 from kit (for XY) |
+| TMC5160T Pro Drivers | 4 | $17.99 | $72 | [Fabreeko](https://www.fabreeko.com/) | 4x TMC2209 from kit (for XY) |
 | Chube Air Hotend | 1 | $260 | $260 | [Luke's Lab](https://www.lukeslabonline.com/) | Phaetus Rapido 2.0 from kit |
 | Mean Well UHP-350-55 (55V HV) | 1 | ~$69 | ~$69 | DigiKey | Weho 250W 24V from kit |
 | Mean Well UHP-350-24 (24V) | 1 | ~$69 | ~$69 | DigiKey | (second PSU, kit only had one) |
 | 5V Buck Converter 24V→5V 5A | 1 | ~$10 | ~$10 | [Amazon](https://www.amazon.com/dp/B09X1XJYB6) | — |
-| **Upgraded Electronics Total** | | | **~$727** | | |
+| **Upgraded Electronics Total** | | | **~$739** | | |
 
 ## Aftermarket CNC Parts (replaced stock printed parts)
 
@@ -92,11 +92,11 @@ All 6061-T6 aluminum unless noted.
 | Category | Cost |
 |----------|------|
 | RatRig Kit (as purchased, shipped) | $2,272 |
-| Upgraded Electronics | ~$727 |
+| Upgraded Electronics | ~$739 |
 | Aftermarket CNC Parts | $699 |
 | Additional Parts | ~$251 |
-| **Current Build Total** | **~$3,949** |
+| **Current Build Total** | **~$3,961** |
 | Planned Upgrades (on order) | ~$292 |
-| **Projected Total** | **~$4,241** |
+| **Projected Total** | **~$4,253** |
 
 *Prices marked with ~ are approximate. Some items were purchased at different times and prices may have changed.*
