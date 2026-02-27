@@ -67,14 +67,14 @@ All 6061-T6 aluminum unless noted.
 
 | Item | Qty | Price | Total | Source |
 |------|-----|-------|-------|--------|
-| Orange Pi 5 Pro 16GB | 1 | ~$100 | ~$100 | [Orange Pi](http://www.orangepi.org/) |
+| Orange Pi 5 Pro 16GB (w/ power supply) | 1 | $128 | $128 | [Amazon](https://www.amazon.com/dp/B0CZRYT9FR) |
 | 128GB NVMe SSD | 1 | ~$15 | ~$15 | — |
 | 3DO USB Camera V2 | 1 | ~$50 | ~$50 | [KB-3D](https://kb-3d.com/store/) |
 | Therm^2 Board (by not salmon man) | 1 | $19 | $19 | [PD3D](https://peedee3d.com/) |
 | Orbiter 2 Smart Sensor | 1 | ~$25 | ~$25 | — |
 | WS2812B LED modules (5-LED x4) | 4 | ~$3 | ~$12 | — |
 | SN74AHCT125N Level Shifter | 1 | ~$2 | ~$2 | — |
-| **Additional Parts Total** | | | **~$223** | |
+| **Additional Parts Total** | | | **~$251** | |
 
 ## Planned Upgrades (on order / pending)
 
@@ -94,9 +94,9 @@ All 6061-T6 aluminum unless noted.
 | RatRig Kit (as purchased, shipped) | $2,272 |
 | Upgraded Electronics | ~$727 |
 | Aftermarket CNC Parts | $699 |
-| Additional Parts | ~$223 |
-| **Current Build Total** | **~$3,921** |
+| Additional Parts | ~$251 |
+| **Current Build Total** | **~$3,949** |
 | Planned Upgrades (on order) | ~$292 |
-| **Projected Total** | **~$4,213** |
+| **Projected Total** | **~$4,241** |
 
 *Prices marked with ~ are approximate. Some items were purchased at different times and prices may have changed.*
