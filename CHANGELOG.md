@@ -102,6 +102,10 @@ Chronological log of modifications to the NIGHTMARE printer. Project started Sep
 - Config changes needed: rotation_distance 40 -> 50, input shaper recalibration
 - 25% more speed headroom at same motor RPM
 
+### CPAP Part Cooling
+- [Mammoth 3D](https://www.youtube.com/@mammoth-3D) CPAP cooling design
+- Kit acquired, needs 3D printed parts before install
+
 ### BRS-AWD V2.2 CNC Conversion
 - [BRS-AWD DRIVE](https://store.brs-engineering.com/products/brs-awd-drive-v21) CoreXY AWD conversion to replace hybrid kinematics
 - Waiting on CNC machined version (printed v2.2b is available, CNC not yet released)

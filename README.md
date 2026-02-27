@@ -128,6 +128,7 @@ All serial numbers, IP addresses, and credentials have been removed. See [SECURI
 - Kalico v0.12.0-786 on all MCUs
 - Input shaper calibrated (MZV X=68.2 Hz, Y=48.8 Hz)
 - 25T pulley upgrade parts on order (will change rotation_distance from 40 to 50)
+- CPAP part cooling ([Mammoth 3D](https://www.youtube.com/@mammoth-3D) design) — kit acquired, needs printed parts
 - [BRS-AWD DRIVE v2.2](https://store.brs-engineering.com/products/brs-awd-drive-v21) CNC version pending release — will convert from hybrid to CoreXY AWD, eliminating the custom kinematics module
 
 ## Dependencies
