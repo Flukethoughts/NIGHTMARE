@@ -178,6 +178,10 @@ YouTube channels that helped shape this build:
 
 - [Lake Martin Machine Gun](https://lakemartinmachinegun.com/) — for stress relief between debugging sessions
 
+## Fuel
+
+- [Monster Zero Ultra](https://www.monsterenergy.com/en-us/energy-drinks/zero-sugar/zero-ultra/) — the caffeine driving this project
+
 ## Built With
 
 - [Claude](https://claude.ai/) by [Anthropic](https://www.anthropic.com/) — AI partner for configuration development, documentation, and debugging
