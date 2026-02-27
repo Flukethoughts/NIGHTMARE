@@ -173,6 +173,7 @@ YouTube channels that helped shape this build:
 - [Mandala Rose Works](https://www.youtube.com/@mandalaroseworks)
 - [Luke's Laboratory](https://www.youtube.com/@LukesLaboratory)
 - [PeeDee3D](https://www.youtube.com/@PeeDee3D)
+- [Mammoth 3D](https://www.youtube.com/@mammoth-3D)
 
 ## Therapy
 
