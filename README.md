@@ -157,6 +157,7 @@ Klipper/Kalico configs and the custom kinematics module are distributed under th
 - [KB-3D](https://kb-3d.com/store/) — 3DO USB Camera V2, Gates smooth idlers
 - [Mandala Rose Works](https://mandalaroseworks.com/) — CNC toolhead, XY joiners, bed support arms, motor mounts
 - [Luke's Lab](https://www.lukeslabonline.com/) — Toro titanium gantry tube
+- [MIGL Fabrication](https://migl-fabrication.de/) — Titanium tube sourcing and install guidance
 - [BRS Engineering](https://store.brs-engineering.com/) — BRS-AWD DRIVE (planned)
 - [Beacon](https://beacon3d.com/) — Beacon RevH probe
 - [Julian Schill](https://github.com/julianschill/klipper-led_effect) — LED effect plugin
