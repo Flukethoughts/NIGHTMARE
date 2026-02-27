@@ -44,4 +44,4 @@ Run `GENERATE_SHAPER_GRAPHS` to test and generate inline graphs. Current values:
 | `CORNER_TEST_FAST/MEDIUM/SLOW/CRAWL` | Corner ringing tests |
 
 ## Inline Graph Display
-Belt tension and shaper graphs render inline in Mainsail console using HTML img tags. Mainsail renders HTML in console output via v-html. Scripts save timestamped copies plus a "latest" symlink to the input_shaper/ folder.
+Belt tension and shaper graphs render inline in the console using HTML img tags. Both Fluidd and Mainsail render HTML in console output. Scripts save timestamped copies plus a "latest" symlink to the input_shaper/ folder.

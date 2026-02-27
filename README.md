@@ -15,7 +15,7 @@ RatRig V-Core 4 Hybrid 500mm with custom standalone Klipper/Kalico configuration
 | Extruder | Orbiter 2 | LDO-36STH20-1004AHG motor |
 | Hotend | Chube Air | 500C capable, 42mm meltzone, PT1000 |
 | Probe | Beacon RevH | USB, contact + scan modes |
-| Camera | 3DO USB Camera V2 | 4K 30fps, hardware-encoded HLS overlay |
+| Camera | 3DO USB Camera V2 | 1080p 30fps, hardware-encoded WebRTC overlay via go2rtc |
 | Filament Sensor | Orbiter 2 Smart Sensor | Runout + tangle detection |
 | Accelerometer | ADXL345 on EBB42 | For input shaper calibration |
 | Status LEDs | 20x WS2812B | Animated effects via klipper-led_effect |
@@ -35,9 +35,25 @@ RatRig V-Core 4 Hybrid 500mm with custom standalone Klipper/Kalico configuration
 - 56V high-voltage XY system with TMC5160T Pro drivers
 - Adaptive bed mesh based on slicer print area
 - Inline belt tension and input shaper graphs in console
-- Camera overlay with hardware-encoded HLS streaming (h264_rkmpp)
+- Camera overlay with hardware-encoded WebRTC streaming (h264_rkmpp + go2rtc)
 - Status LED animations integrated into print workflow
 - Comprehensive calibration macro suite
+
+## Aftermarket Upgrades
+
+Most stock printed parts have been replaced with machined aluminum and titanium components:
+
+| Part | Source |
+|------|--------|
+| CNC Toolhead (plates, uprights, adapter) | [Mandala Rose Works](https://mandalaroseworks.com/collections/ratrig-cnc-toolhead) |
+| CNC XY Joiners | [Mandala Rose Works](https://mandalaroseworks.com/products/ratrig-vcore-4-xy-joiners) |
+| CNC Bed Support Arms | [Mandala Rose Works](https://mandalaroseworks.com/products/ratrig-bed-support-arms-for-4-0) |
+| CNC Motor Mounts | [Mandala Rose Works](https://mandalaroseworks.com/products/ratrig-vcore4-machined-motor-mounts) |
+| Toro Titanium Gantry Tube 725mm | [Luke's Lab](https://www.lukeslabonline.com/products/toro-titanium-tube) |
+
+Power: Mean Well UHP-350-55 (55V HV) + UHP-350-24 (24V) + 5V buck converter for host and LEDs.
+
+See [docs/hardware-modifications.md](docs/hardware-modifications.md) for full details.
 
 ## Repository Structure
 
@@ -109,6 +125,7 @@ All serial numbers, IP addresses, and credentials have been removed. See [SECURI
 - Kalico v0.12.0-786 on all MCUs
 - Input shaper calibrated (MZV X=68.2 Hz, Y=48.8 Hz)
 - 25T pulley upgrade parts on order (will change rotation_distance from 40 to 50)
+- [BRS-AWD DRIVE v2.2](https://store.brs-engineering.com/products/brs-awd-drive-v21) CNC version pending release — will convert from hybrid to CoreXY AWD, eliminating the custom kinematics module
 
 ## Dependencies
 

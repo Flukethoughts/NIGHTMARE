@@ -77,6 +77,35 @@ Documentation of all hardware modifications made to the NIGHTMARE RatRig V-Core 
 - **FAN3 (PD13):** Controller/electronics fan, auto-activates with stepper activity, 60s idle timeout, 0.4 idle speed
 - **FAN5 (PE5):** Enclosure exhaust fan, always-on via output_pin (24V on HV stepper driver rail)
 
+## Aftermarket & Upgraded Parts
+
+Stock printed parts replaced with machined aluminum and titanium upgrades for rigidity and durability.
+
+| Part | Product | Source | Material / Spec |
+|------|---------|--------|-----------------|
+| Toolhead | Mandala Rose Works CNC Toolhead | [mandalaroseworks.com](https://mandalaroseworks.com/collections/ratrig-cnc-toolhead) | 6061-T6 aluminum (bottom plate, uprights, back plate, top plate, extruder adapter) |
+| XY Joiners | Mandala Rose Works CNC XY Joiners | [mandalaroseworks.com](https://mandalaroseworks.com/products/ratrig-vcore-4-xy-joiners) | 6061-T6 aluminum, 112g/side, compatible with CoreXY/Hybrid/IDEX and titanium tube |
+| Bed Arms | Mandala Rose Works Bed Support Arms | [mandalaroseworks.com](https://mandalaroseworks.com/products/ratrig-bed-support-arms-for-4-0) | 6061 aluminum, Kelvin kinematics, reduces Z height by 5mm with both bed spacers |
+| Motor Mounts | Mandala Rose Works CNC Motor Mounts | [mandalaroseworks.com](https://mandalaroseworks.com/products/ratrig-vcore4-machined-motor-mounts) | 6061 aluminum, access holes for stepper adjustment, uses existing kit standoffs |
+| Gantry Tube | Toro Titanium Tube 725mm | [Luke's Lab](https://www.lukeslabonline.com/products/toro-titanium-tube) | Titanium, 725mm (500mm build volume variant), replaces stock steel bar |
+
+### Power Supplies
+
+| Unit | Model | Spec | Powers |
+|------|-------|------|--------|
+| HV PSU | Mean Well UHP-350-55 | 55V 350W | TMC5160T Pro HV stepper drivers (4x XY motors) |
+| 24V PSU | Mean Well UHP-350-24 | 24V 350W | Bed heater, fans, Z motors, toolboard, general 24V |
+| 5V Buck | DC-DC 24V to 5V 5A Step-Down ([Amazon](https://www.amazon.com/dp/B09X1XJYB6)) | 25W | Orange Pi 5 Pro + status LEDs |
+
+## Planned: BRS-AWD V2.2 CNC Conversion
+
+- **What:** [BRS-AWD DRIVE v2.2](https://store.brs-engineering.com/products/brs-awd-drive-v21) CoreXY AWD conversion
+- **Status:** Waiting on CNC machined version (printed v2.2b available, CNC not yet released)
+- **Why:** Replaces hybrid Y belt system with proper CoreXY AWD layout. Eliminates the custom `hybrid_corexy_4wd.py` kinematics module — uses stock `corexy` kinematics instead
+- **Features:** Integrated coaxial belt tensioner, compatible with V-Core 4.x, no frame modifications
+- **Combined with:** 25T pulley upgrade (rotation_distance 40 → 50)
+- **Impact:** Full input shaper recalibration, stepper config rewrite, belt tension targets will change
+
 ## Dir Pin Inversions
 
 Critical for V-Core 4 Hybrid belt routing -- wrong inversions cause axis to move backwards:

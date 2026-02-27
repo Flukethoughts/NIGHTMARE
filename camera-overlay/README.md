@@ -1,25 +1,38 @@
 # Camera Overlay System
 
-Custom overlay stream that combines the 3DO USB Camera V2 feed with live printer status information (temps, motion, progress). Runs as a systemd service on the printer's Orange Pi 5 Pro.
+Custom overlay stream that combines the 3DO USB Camera V2 feed with live printer status information (temps, motion, progress) and serves it via WebRTC for low-latency viewing. Runs as systemd services on the printer's Orange Pi 5 Pro.
+
+![Camera Overlay](../images/camera-overlay.jpg)
 
 ## Architecture
 
 ```
-ustreamer (port 8083, localhost only, 4K 30fps MJPEG, HW encode via camera)
+ustreamer (port 8083, localhost only, 1080p 30fps MJPEG, HW encode via camera)
     -> ffmpeg (SW decode + drawbox/drawtext overlay filters + h264_rkmpp HW encode)
-    -> HLS segments (.ts + .m3u8) to /tmp/camera-overlay-hls/ (tmpfs)
-    -> hls_server.py (Python HTTP server on port 8084)
-    -> browsers load HTML player page with hls.js
+    -> raw H.264 pipe to stdout
+    -> go2rtc (exec source, reads pipe, serves WebRTC/MSE/HLS)
+    -> browsers connect via WebRTC
 ```
+
+**On-demand:** ffmpeg only runs when a viewer connects. go2rtc manages the ffmpeg lifecycle via its `exec:` source — when no viewers are connected, ffmpeg is not running and CPU usage is 0%.
+
+## Services
+
+| Service | What it runs | Lifecycle |
+|---------|-------------|-----------|
+| `crowsnest.service` | ustreamer (1080p MJPEG capture) | Always running |
+| `camera-overlay.service` | `overlay_status.py` (Moonraker API poller) | Always running |
+| `go2rtc.service` | go2rtc v1.9.14 (manages ffmpeg exec, serves WebRTC) | Always running, ffmpeg on-demand |
 
 ## Endpoints
 
 | URL | Description |
 |-----|-------------|
-| `http://YOUR_PRINTER_IP:8084/` | HTML player page (hls.js auto-plays) |
-| `http://YOUR_PRINTER_IP:8084/stream.m3u8` | HLS playlist (direct embedding) |
-| `http://YOUR_PRINTER_IP:8084/snapshot` | JPEG snapshot (proxied from ustreamer, no overlay) |
-| `http://YOUR_PRINTER_IP:8084/stats` | HLS stats |
+| `http://YOUR_PRINTER_IP:1984/` | go2rtc web UI (stream list, player) |
+| `http://YOUR_PRINTER_IP:1984/stream.html?src=printer_cam` | WebRTC player page |
+| `http://YOUR_PRINTER_IP:1984/api/ws?src=printer_cam` | WebRTC WebSocket (used by Fluidd) |
+| `http://YOUR_PRINTER_IP:8083/?action=snapshot` | JPEG snapshot (raw camera, no overlay) |
+| `http://YOUR_PRINTER_IP:8083/?action=stream` | Raw ustreamer MJPEG (localhost only) |
 
 ## Files on Printer
 
@@ -27,55 +40,61 @@ Located at `/home/pi/camera-overlay/`:
 
 | File | Description |
 |------|-------------|
-| `start.sh` | Entrypoint, runs ffmpeg in restart loop |
-| `hls_server.py` | HTTP server: HLS files, HTML player, snapshot proxy |
-| `overlay_status.py` | Polls Moonraker API, writes status text files (~1s interval) |
+| `start.sh` | Entrypoint for camera-overlay.service, runs overlay_status.py |
+| `ffmpeg_overlay.sh` | ffmpeg pipeline (called by go2rtc exec), outputs raw H.264 to stdout |
+| `go2rtc.yaml` | go2rtc configuration (exec source, WebRTC, API) |
+| `overlay_status.py` | Polls Moonraker API, writes status text files every ~1s |
 | `status/` | Text files read by ffmpeg drawtext filters (reload=1) |
+| `hls_server.py` | OLD HLS server (no longer used, kept for reference) |
 
-Service: `/etc/systemd/system/camera-overlay.service` (runs as `pi`, `Restart=always`)
+Other locations:
+- go2rtc binary: `/usr/local/bin/go2rtc` (v1.9.14, ARM64 static binary)
+- ffmpeg: `/usr/lib/jellyfin-ffmpeg/ffmpeg` (jellyfin-ffmpeg 7.1.3, has rkmpp support)
+- Services: `/etc/systemd/system/camera-overlay.service`, `/etc/systemd/system/go2rtc.service`
 
-## Current Settings
+## Current ffmpeg Settings
 
 | Parameter | Value |
 |-----------|-------|
-| Encoder | h264_rkmpp (Rockchip VPU) |
+| Input | 1920x1080 MJPEG from ustreamer (SW decode) |
+| Encoder | h264_rkmpp (Rockchip VPU hardware H.264) |
 | Bitrate | 4 Mbps |
 | GOP | 30 frames (keyframe every 1s at 30fps) |
 | B-frames | 0 |
-| HLS segment time | 1s |
-| HLS playlist size | 3 segments |
-| HLS flags | delete_segments, temp_file, split_by_time |
+| Low-latency flags | `-fflags nobuffer -flags low_delay` |
+| Output | Raw H.264 annex-b to stdout (`-f h264 -`) |
 
-## CPU Usage
+## Performance
 
-| Configuration | CPU | System Idle |
-|--------------|-----|-------------|
-| h264_rkmpp + HLS (current) | ~159% | ~64% |
-| Software MJPEG 4K (old) | ~500% | ~13% |
+| Metric | go2rtc + WebRTC (current) | HLS (previous) | SW MJPEG (original) |
+|--------|--------------------------|-----------------|---------------------|
+| Resolution | 1080p | 4K | 4K |
+| ffmpeg CPU | ~47% (on-demand) | ~159% (always-on) | ~500% |
+| System idle | ~86% | ~64% | ~13% |
+| Latency | ~200-500ms | ~2-3s | ~1s |
 
 ## Overlay Layout
 
-- **Top bar** (200px, semi-transparent black, blue accent):
-  - Row 1: Printer status (white 48pt) + heater temps (yellow 40pt)
-  - Row 2: Motion info (cyan 38pt) + motor temps (green 36pt)
-  - Row 3: System temps (purple 36pt)
-- **Bottom bar** (90px): Filename (white 38pt) + progress (cyan 38pt)
+- **Top bar** (100px, semi-transparent black, blue left accent 3px):
+  - Row 1 (y=7): printer status (left, white 24pt bold), heater temps (right, yellow 20pt)
+  - Row 2 (y=37): motion info (left, cyan 19pt bold), motor temps (right, green 18pt)
+  - Row 3 (y=67): system temps (right, purple 18pt)
+- **Bottom bar** (45px): filename (left, white 19pt), progress (right, cyan 19pt bold)
 - Font: DejaVu Sans Mono (Bold + Regular)
 
-## Latency Tuning
+## Fluidd Webcam Configuration
 
-Tuned from ~7-10s down to ~2-3s:
-- HLS segments: 2s -> 1s
-- GOP: 60 -> 30 (aligned with segment duration)
-- Playlist: 5 -> 3 segments
-- hls.js: lowLatencyMode=true, liveSyncDurationCount=1, maxBufferLength=2
-
-HLS has a floor of ~2-3s latency. For sub-second, would need WebRTC (e.g., go2rtc).
+| Setting | Value |
+|---------|-------|
+| Name | `overlay_cam` |
+| Service | `webrtc-go2rtc` |
+| Stream URL | `http://YOUR_PRINTER_IP:1984/api/ws?src=printer_cam` |
+| Snapshot URL | `http://YOUR_PRINTER_IP:8083/?action=snapshot` |
 
 ## Known Issues
 
 ### rkmpp MJPEG Encoder is Broken
-The `mjpeg_rkmpp` encoder doesn't byte-stuff entropy data and omits EOI markers. Browsers refuse to render the output. This is a fundamental MPP library bug. Use `h264_rkmpp` instead.
+The `mjpeg_rkmpp` encoder doesn't byte-stuff entropy data and omits EOI markers. Browsers refuse to render the output. This is a fundamental MPP library bug, not fixable by rebuilding ffmpeg. Use `h264_rkmpp` instead.
 
 ### ffmpeg Dual-Output Segfault
 Using two `-vf` flags (one per output) in jellyfin-ffmpeg 7.1.3 causes segfault (exit 139). Use single output only; snapshots are proxied from ustreamer separately.
@@ -85,7 +104,14 @@ Without `-y`, ffmpeg prompts to overwrite existing files and exits in non-intera
 
 ## Software Requirements
 
-- **ffmpeg:** jellyfin-ffmpeg 7.1.3 at `/usr/lib/jellyfin-ffmpeg/ffmpeg` (has rkmpp support)
-- **ustreamer:** For camera capture
+- **go2rtc:** v1.9.14 at `/usr/local/bin/go2rtc` (ARM64 static binary, has Rockchip presets)
+- **ffmpeg:** jellyfin-ffmpeg 7.1.3 at `/usr/lib/jellyfin-ffmpeg/ffmpeg` (has `--enable-rkmpp --enable-rkrga`)
+- **ustreamer:** For camera capture (via crowsnest)
 - **Kernel:** Must have `/dev/mpp_service` (Rockchip MPP device)
 - **Fonts:** `fonts-dejavu-core` package
+
+## Migration History
+
+1. **Original:** Software MJPEG relay (~500% CPU, ~1s latency)
+2. **Feb 2026:** h264_rkmpp + HLS via hls_server.py (~159% CPU, ~2-3s latency)
+3. **Feb 24 2026:** go2rtc + WebRTC, downgraded to 1080p (~47% CPU on-demand, ~200-500ms latency)

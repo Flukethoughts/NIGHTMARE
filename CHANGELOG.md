@@ -79,6 +79,15 @@ Chronological log of modifications to the NIGHTMARE printer.
 - Purple favicons
 - Vibrant 80s theme in Mainsail
 
+### go2rtc WebRTC Migration (Feb 24)
+- Replaced HLS streaming with go2rtc v1.9.14 + WebRTC
+- Downgraded capture from 4K to 1080p (CPU savings, WebRTC doesn't need 4K)
+- ffmpeg outputs raw H.264 to stdout, go2rtc reads via exec source
+- On-demand streaming: ffmpeg only runs when viewer connects (0% CPU idle)
+- CPU dropped from ~159% (HLS always-on) to ~47% (on-demand), system idle ~86%
+- Latency dropped from ~2-3s (HLS floor) to ~200-500ms (WebRTC)
+- Fluidd webcam configured as `webrtc-go2rtc` service type
+
 ### Fan Configuration
 - FAN2 (PD12): Enclosure intake fan, always-on
 - FAN3 (PD13): Controller fan, auto with steppers, 60s idle timeout
@@ -93,6 +102,9 @@ Chronological log of modifications to the NIGHTMARE printer.
 - Config changes needed: rotation_distance 40 -> 50, input shaper recalibration
 - 25% more speed headroom at same motor RPM
 
-### BRS-AWD V2.2 Conversion
-- CoreXY AWD conversion to replace hybrid kinematics
-- Eliminates custom kinematics module, uses stock `corexy` kinematics
+### BRS-AWD V2.2 CNC Conversion
+- [BRS-AWD DRIVE](https://store.brs-engineering.com/products/brs-awd-drive-v21) CoreXY AWD conversion to replace hybrid kinematics
+- Waiting on CNC machined version (printed v2.2b is available, CNC not yet released)
+- Eliminates custom `hybrid_corexy_4wd` kinematics module — uses stock `corexy` kinematics
+- Integrated coaxial belt tensioner, compatible with V-Core 4.x, no frame modifications
+- Combined with 25T pulley upgrade: rotation_distance 40 → 50, full input shaper recalibration required

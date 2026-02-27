@@ -9,7 +9,7 @@
 Install in this order:
 1. **Kalico** (Klipper fork): `git clone https://github.com/KalicoCrew/kalico.git ~/klipper`
 2. **Moonraker**: API server for web interfaces
-3. **Mainsail**: Web interface (install via update_manager)
+3. **Fluidd**: Web interface (install via update_manager)
 4. **KlipperScreen**: Touch display interface
 5. **Crowsnest**: Camera streaming (ustreamer)
 6. **jellyfin-ffmpeg**: For hardware-encoded camera overlay (h264_rkmpp)

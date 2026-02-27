@@ -58,6 +58,20 @@
 
 All thermistors are 100K NTC (Generic 3950). Use th4-th7 NTC inputs, NOT th0-th3 PT1000 inputs.
 
+## Status LED Level Shifter — SN74AHCT125N Wiring
+
+The WS2812B LEDs require 5V data signal but the Octopus Pro outputs 3.3V. A unidirectional SN74AHCT125N level shifter converts the signal. Do NOT use bi-directional shifters (BSS138, TXB0104, TXS0108E) — they are too slow for the 800kHz neopixel protocol.
+
+| SN74AHCT125N Pin | Connection | Notes |
+|------------------|------------|-------|
+| Pin 1 (1OE) | GND | Enable gate 1 (active low) |
+| Pin 2 (1A) | Octopus PB10 | 3.3V neopixel data input |
+| Pin 3 (1Y) | LED strip DIN | 5V neopixel data output |
+| Pin 7 (GND) | GND | Ground |
+| Pin 14 (VCC) | 5V | Power (from 5V buck) |
+
+Add a 10nF ceramic bypass capacitor between VCC (pin 14) and GND (pin 7), as close to the chip as possible.
+
 ## Dir Pin Inversions
 
 | Stepper | Dir Pin | Inverted? |
