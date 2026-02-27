@@ -87,6 +87,7 @@ Stock printed parts replaced with machined aluminum and titanium upgrades for ri
 | XY Joiners | Mandala Rose Works CNC XY Joiners | [mandalaroseworks.com](https://mandalaroseworks.com/products/ratrig-vcore-4-xy-joiners) | 6061-T6 aluminum, 112g/side, compatible with CoreXY/Hybrid/IDEX and titanium tube |
 | Bed Arms | Mandala Rose Works Bed Support Arms | [mandalaroseworks.com](https://mandalaroseworks.com/products/ratrig-bed-support-arms-for-4-0) | 6061 aluminum, Kelvin kinematics, reduces Z height by 5mm with both bed spacers |
 | Motor Mounts | Mandala Rose Works CNC Motor Mounts | [mandalaroseworks.com](https://mandalaroseworks.com/products/ratrig-vcore4-machined-motor-mounts) | 6061 aluminum, access holes for stepper adjustment, uses existing kit standoffs |
+| Mini Oldhams | Mandala Rose Works Mini Oldham Wobblers (x3) | [mandalaroseworks.com](https://mandalaroseworks.com/products/mini-oldham-leadscrew-wobblers) | Silicone O-rings (200C rated), replaces stock wobblers between leadscrew nut and yoke |
 | Gantry Tube | Toro Titanium Tube 725mm | [Luke's Lab](https://www.lukeslabonline.com/products/toro-titanium-tube) | Titanium, 725mm (500mm build volume variant), replaces stock steel bar |
 
 ### Power Supplies

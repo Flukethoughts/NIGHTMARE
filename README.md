@@ -49,6 +49,7 @@ Most stock printed parts have been replaced with machined aluminum and titanium 
 | CNC XY Joiners | [Mandala Rose Works](https://mandalaroseworks.com/products/ratrig-vcore-4-xy-joiners) |
 | CNC Bed Support Arms | [Mandala Rose Works](https://mandalaroseworks.com/products/ratrig-bed-support-arms-for-4-0) |
 | CNC Motor Mounts | [Mandala Rose Works](https://mandalaroseworks.com/products/ratrig-vcore4-machined-motor-mounts) |
+| Mini Oldham Wobblers (x3) | [Mandala Rose Works](https://mandalaroseworks.com/products/mini-oldham-leadscrew-wobblers) |
 | Toro Titanium Gantry Tube 725mm | [Luke's Lab](https://www.lukeslabonline.com/products/toro-titanium-tube) |
 
 Power: Mean Well UHP-350-55 (55V HV) + UHP-350-24 (24V) + 5V buck converter for host and LEDs.
