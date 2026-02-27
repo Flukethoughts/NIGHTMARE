@@ -4,6 +4,8 @@ RatRig V-Core 4 Hybrid 500mm with custom standalone Klipper/Kalico configuration
 
 **Project started:** September 29, 2024 | **Current build cost:** ~$3,996 | **Build time:** ~44 hours manual labor ([full breakdown](docs/cost-breakdown.md))
 
+> **Disclaimer:** This is a personal hobby project documenting my 3D printer build journey. It is not sponsored, affiliated with, or endorsed by any of the vendors or creators linked here. All parts were purchased with my own money. Links are provided purely as reference for anyone interested in similar builds — there are no affiliate links or commercial intent.
+
 ## Hardware
 
 | Component | Model | Details |
