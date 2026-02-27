@@ -2,7 +2,7 @@
 
 RatRig V-Core 4 Hybrid 500mm with custom standalone Klipper/Kalico configuration. Built from scratch after removing RatOS. Features custom hybrid CoreXY 4WD kinematics, 56V high-voltage XY system, and extensive calibration tooling.
 
-**Project started:** September 29, 2024 | **Current build cost:** ~$3,961 | **Build time:** ~44 hours manual labor ([full breakdown](docs/cost-breakdown.md))
+**Project started:** September 29, 2024 | **Current build cost:** ~$3,996 | **Build time:** ~44 hours manual labor ([full breakdown](docs/cost-breakdown.md))
 
 ## Hardware
 
@@ -52,7 +52,7 @@ Most stock printed parts have been replaced with machined aluminum and titanium 
 | CNC Bed Support Arms | [Mandala Rose Works](https://mandalaroseworks.com/products/ratrig-bed-support-arms-for-4-0) |
 | CNC Motor Mounts | [Mandala Rose Works](https://mandalaroseworks.com/products/ratrig-vcore4-machined-motor-mounts) |
 | Mini Oldham Wobblers (x3) | [Mandala Rose Works](https://mandalaroseworks.com/products/mini-oldham-leadscrew-wobblers) |
-| Toro Titanium Gantry Tube 725mm | [Luke's Lab](https://www.lukeslabonline.com/products/toro-titanium-tube) |
+| Titanium Gantry Tube 725mm (Clinch Nut) | [MIGL Fabrication](https://migl-fabrication.de/) |
 
 Power: Mean Well UHP-350-55 (55V HV) + UHP-350-24 (24V) + 5V buck converter for host and LEDs.
 
@@ -156,12 +156,11 @@ Klipper/Kalico configs and the custom kinematics module are distributed under th
 - [Fabreeko](https://www.fabreeko.com/) — TMC5160T Pro drivers
 - [KB-3D](https://kb-3d.com/store/) — 3DO USB Camera V2, Gates smooth idlers
 - [Mandala Rose Works](https://mandalaroseworks.com/) — CNC toolhead, XY joiners, bed support arms, motor mounts
-- [Luke's Lab](https://www.lukeslabonline.com/) — Toro titanium gantry tube
-- [MIGL Fabrication](https://migl-fabrication.de/) — Titanium tube sourcing and install guidance
+- [MIGL Fabrication](https://migl-fabrication.de/) — Titanium gantry tube (clinch nut variant)
 - [BRS Engineering](https://store.brs-engineering.com/) — BRS-AWD DRIVE (planned)
 - [Beacon](https://beacon3d.com/) — Beacon RevH probe
 - [Julian Schill](https://github.com/julianschill/klipper-led_effect) — LED effect plugin
-- [Chube](https://chubehotend.com/) — Chube Air hotend
+- [Chube](https://chubehotend.com/) / [Luke's Lab](https://www.lukeslabonline.com/) — Chube Air hotend
 - Original `hybrid_corexy` kinematics by Fabrice Gallet, Helge Keck, Mikkel Schmidt
 
 ## Inspiration & Community

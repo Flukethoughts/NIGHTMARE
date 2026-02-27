@@ -60,8 +60,8 @@ All 6061-T6 aluminum unless noted.
 | CNC Bed Support Arms (V-Core 4) | 1 set | $144 | $144 | [Mandala Rose Works](https://mandalaroseworks.com/) |
 | CNC Motor Mounts | 1 set | $105 | $105 | [Mandala Rose Works](https://mandalaroseworks.com/) |
 | Mini Oldham Wobblers | 3 | $51 | $51 | [Mandala Rose Works](https://mandalaroseworks.com/) |
-| Toro Titanium Tube 725mm (titanium) | 1 | $145 | $145 | [Luke's Lab](https://www.lukeslabonline.com/) |
-| **Aftermarket CNC Total** | | | **$699** | |
+| Titanium Tube 725mm — Clinch Nut Variant (titanium) | 1 | €165 (~$180) | ~$180 | [MIGL Fabrication](https://migl-fabrication.de/) |
+| **Aftermarket CNC Total** | | | **~$734** | |
 
 ## Additional Parts (not in kit)
 
@@ -94,11 +94,11 @@ All 6061-T6 aluminum unless noted.
 |----------|------|
 | RatRig Kit (as purchased, shipped) | $2,272 |
 | Upgraded Electronics | ~$739 |
-| Aftermarket CNC Parts | $699 |
+| Aftermarket CNC Parts | ~$734 |
 | Additional Parts | ~$251 |
-| **Current Build Total** | **~$3,961** |
+| **Current Build Total** | **~$3,996** |
 | Planned Upgrades (on order) | ~$292 |
-| **Projected Total** | **~$4,253** |
+| **Projected Total** | **~$4,288** |
 
 ## Time Investment
 
