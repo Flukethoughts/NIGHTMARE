@@ -54,7 +54,7 @@ Most stock printed parts have been replaced with machined aluminum and titanium 
 
 Power: Mean Well UHP-350-55 (55V HV) + UHP-350-24 (24V) + 5V buck converter for host and LEDs.
 
-See [docs/hardware-modifications.md](docs/hardware-modifications.md) for full details.
+See [docs/hardware-modifications.md](docs/hardware-modifications.md) for full details and [docs/cost-breakdown.md](docs/cost-breakdown.md) for the complete price breakdown.
 
 ## Repository Structure
 
